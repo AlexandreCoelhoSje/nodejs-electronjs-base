@@ -1,8 +1,7 @@
-import { AppDataSource } from "./data-source"
-import { User } from "../entidades/User"
+import { AppDataSource } from "./dataSource"
+import { User } from "../entidades/User.entity"
 
 AppDataSource.initialize().then(async () => {
-
     console.log("Inserting a new user into the database...")
     const user = new User()
     user.firstName = "Timber"
